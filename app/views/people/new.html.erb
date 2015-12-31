@@ -1,0 +1,17 @@
+<h1>Person#new</h1>
+
+<%= form_for :person, url: people_path do |f| %>
+  <p>
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </p>
+ 
+  <p>
+    <%= f.label :data %><br>
+    <%= f.text_field :data %>
+  </p>
+ 
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>
